@@ -1,0 +1,381 @@
+{
+ "first_date": "2026-11-20",
+ "last_date": "2026-11-20",
+ "counts": {
+  "rows": 26,
+  "reviewed": 24,
+  "skipped": 2,
+  "flagged_jobs": 10,
+  "flags": 10,
+  "by_check": {
+   "no_invoice": 1,
+   "zero_dollar": 1,
+   "balance_due": 1,
+   "short_notes": 1,
+   "callback": 2,
+   "below_minimum": 1,
+   "big_discount": 1,
+   "duplicate_invoice": 2
+  }
+ },
+ "totals_cents": {
+  "invoiced": 2616900,
+  "balance_due": 1506500
+ },
+ "checks_not_run": [],
+ "by_check": {
+  "no_invoice": {
+   "title": "Completed with no invoice number",
+   "count": 1,
+   "items": [
+    {
+     "job": "70103",
+     "customer": "Brightwater Cafe",
+     "technician": "Dale Brennick",
+     "job_type": "Service call",
+     "date": "2026-11-20",
+     "invoice": "",
+     "total": 0,
+     "balance": 0,
+     "reason": "Marked completed but has no invoice number."
+    }
+   ]
+  },
+  "zero_dollar": {
+   "title": "Zero-dollar invoice on a job that should be billed",
+   "count": 1,
+   "items": [
+    {
+     "job": "70111",
+     "customer": "Gil Pemberton",
+     "technician": "Priya Anand",
+     "job_type": "Service call",
+     "date": "2026-11-20",
+     "invoice": "91505",
+     "total": 0,
+     "balance": 0,
+     "reason": "Invoice 91505 is $0.00 and Service call is not on the no-charge list (Warranty, Recall)."
+    }
+   ]
+  },
+  "balance_due": {
+   "title": "Balance still due, payment type not billed later",
+   "count": 1,
+   "items": [
+    {
+     "job": "70114",
+     "customer": "Quinn Abernathy",
+     "technician": "Priya Anand",
+     "job_type": "Service call",
+     "date": "2026-11-20",
+     "invoice": "91508",
+     "total": 21500,
+     "balance": 21500,
+     "reason": "$215.00 is still due and the payment type 'Check' is not on the billed-later list (On account, Financing)."
+    }
+   ]
+  },
+  "short_notes": {
+   "title": "Summary notes missing or too short",
+   "count": 1,
+   "items": [
+    {
+     "job": "70123",
+     "customer": "Oscar Lindqvist",
+     "technician": "Tomas Verrill",
+     "job_type": "Service call",
+     "date": "2026-11-20",
+     "invoice": "91512",
+     "total": 9900,
+     "balance": 0,
+     "reason": "Summary notes are 4 characters. The minimum is 25."
+    }
+   ]
+  },
+  "callback": {
+   "title": "Callback: a return visit for an earlier job",
+   "count": 2,
+   "items": [
+    {
+     "job": "70133",
+     "customer": "Marlow Family",
+     "technician": "Wen Soraya",
+     "job_type": "Recall",
+     "date": "2026-11-20",
+     "invoice": "91517",
+     "total": 0,
+     "balance": 0,
+     "reason": "Callback: a recall of job 70101. The original was done by Dale Brennick on Nov 20, 2026.",
+     "original_job": "70101",
+     "original_technician": "Dale Brennick",
+     "original_date": "2026-11-20"
+    },
+    {
+     "job": "70142",
+     "customer": "Winslow Carpentry",
+     "technician": "Gus Ferrante",
+     "job_type": "Recall",
+     "date": "2026-11-20",
+     "invoice": "91521",
+     "total": 0,
+     "balance": 0,
+     "reason": "Callback: a recall of job 70998. The original job is not in this file.",
+     "original_job": "70998",
+     "original_technician": null,
+     "original_date": null
+    }
+   ]
+  },
+  "below_minimum": {
+   "title": "Invoice total below the minimum for the job type",
+   "count": 1,
+   "items": [
+    {
+     "job": "70121",
+     "customer": "Ivy Montrose",
+     "technician": "Tomas Verrill",
+     "job_type": "Service call",
+     "date": "2026-11-20",
+     "invoice": "91510",
+     "total": 5900,
+     "balance": 0,
+     "reason": "Invoice total $59.00 is below the $89.00 minimum for Service call jobs."
+    }
+   ]
+  },
+  "big_discount": {
+   "title": "Discount above the allowed percent",
+   "count": 1,
+   "items": [
+    {
+     "job": "70131",
+     "customer": "Cobalt Yoga Studio",
+     "technician": "Wen Soraya",
+     "job_type": "Install",
+     "date": "2026-11-20",
+     "invoice": "91515",
+     "total": 340000,
+     "balance": 0,
+     "reason": "Discount $850.00 is 20.0% of the $4,250.00 before the discount. The limit is 15%."
+    }
+   ]
+  },
+  "duplicate_invoice": {
+   "title": "Invoice number used on more than one job",
+   "count": 2,
+   "items": [
+    {
+     "job": "70141",
+     "customer": "Ada Ferreira-Cole",
+     "technician": "Gus Ferrante",
+     "job_type": "Service call",
+     "date": "2026-11-20",
+     "invoice": "91520",
+     "total": 18900,
+     "balance": 0,
+     "reason": "Invoice number 91520 is also on job 70143.",
+     "other_jobs": [
+      "70143"
+     ]
+    },
+    {
+     "job": "70143",
+     "customer": "Tamsin Okoye",
+     "technician": "Gus Ferrante",
+     "job_type": "Service call",
+     "date": "2026-11-20",
+     "invoice": "91520",
+     "total": 20500,
+     "balance": 0,
+     "reason": "Invoice number 91520 is also on job 70141.",
+     "other_jobs": [
+      "70141"
+     ]
+    }
+   ]
+  }
+ },
+ "by_technician": [
+  {
+   "technician": "Dale Brennick",
+   "jobs": 5,
+   "invoiced": 696700,
+   "balance_due": 640000,
+   "flag_count": 1,
+   "flagged_jobs": [
+    {
+     "job": "70103",
+     "customer": "Brightwater Cafe",
+     "job_type": "Service call",
+     "total": 0,
+     "flags": [
+      {
+       "check": "no_invoice",
+       "reason": "Marked completed but has no invoice number."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "technician": "Gus Ferrante",
+   "jobs": 4,
+   "invoiced": 65300,
+   "balance_due": 0,
+   "flag_count": 3,
+   "flagged_jobs": [
+    {
+     "job": "70141",
+     "customer": "Ada Ferreira-Cole",
+     "job_type": "Service call",
+     "total": 18900,
+     "flags": [
+      {
+       "check": "duplicate_invoice",
+       "reason": "Invoice number 91520 is also on job 70143."
+      }
+     ]
+    },
+    {
+     "job": "70142",
+     "customer": "Winslow Carpentry",
+     "job_type": "Recall",
+     "total": 0,
+     "flags": [
+      {
+       "check": "callback",
+       "reason": "Callback: a recall of job 70998. The original job is not in this file."
+      }
+     ]
+    },
+    {
+     "job": "70143",
+     "customer": "Tamsin Okoye",
+     "job_type": "Service call",
+     "total": 20500,
+     "flags": [
+      {
+       "check": "duplicate_invoice",
+       "reason": "Invoice number 91520 is also on job 70141."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "technician": "Priya Anand",
+   "jobs": 5,
+   "invoiced": 559400,
+   "balance_due": 21500,
+   "flag_count": 2,
+   "flagged_jobs": [
+    {
+     "job": "70111",
+     "customer": "Gil Pemberton",
+     "job_type": "Service call",
+     "total": 0,
+     "flags": [
+      {
+       "check": "zero_dollar",
+       "reason": "Invoice 91505 is $0.00 and Service call is not on the no-charge list (Warranty, Recall)."
+      }
+     ]
+    },
+    {
+     "job": "70114",
+     "customer": "Quinn Abernathy",
+     "job_type": "Service call",
+     "total": 21500,
+     "flags": [
+      {
+       "check": "balance_due",
+       "reason": "$215.00 is still due and the payment type 'Check' is not on the billed-later list (On account, Financing)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "technician": "Tomas Verrill",
+   "jobs": 5,
+   "invoiced": 893200,
+   "balance_due": 845000,
+   "flag_count": 2,
+   "flagged_jobs": [
+    {
+     "job": "70121",
+     "customer": "Ivy Montrose",
+     "job_type": "Service call",
+     "total": 5900,
+     "flags": [
+      {
+       "check": "below_minimum",
+       "reason": "Invoice total $59.00 is below the $89.00 minimum for Service call jobs."
+      }
+     ]
+    },
+    {
+     "job": "70123",
+     "customer": "Oscar Lindqvist",
+     "job_type": "Service call",
+     "total": 9900,
+     "flags": [
+      {
+       "check": "short_notes",
+       "reason": "Summary notes are 4 characters. The minimum is 25."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "technician": "Wen Soraya",
+   "jobs": 5,
+   "invoiced": 402300,
+   "balance_due": 0,
+   "flag_count": 2,
+   "flagged_jobs": [
+    {
+     "job": "70131",
+     "customer": "Cobalt Yoga Studio",
+     "job_type": "Install",
+     "total": 340000,
+     "flags": [
+      {
+       "check": "big_discount",
+       "reason": "Discount $850.00 is 20.0% of the $4,250.00 before the discount. The limit is 15%."
+      }
+     ]
+    },
+    {
+     "job": "70133",
+     "customer": "Marlow Family",
+     "job_type": "Recall",
+     "total": 0,
+     "flags": [
+      {
+       "check": "callback",
+       "reason": "Callback: a recall of job 70101. The original was done by Dale Brennick on Nov 20, 2026."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped_jobs": [
+  {
+   "job": "70151",
+   "customer": "Delphine Marsh",
+   "technician": "Dale Brennick",
+   "status": "Canceled",
+   "date": "2026-11-20"
+  },
+  {
+   "job": "70152",
+   "customer": "Roland Ames",
+   "technician": "Tomas Verrill",
+   "status": "In progress",
+   "date": "2026-11-20"
+  }
+ ]
+}

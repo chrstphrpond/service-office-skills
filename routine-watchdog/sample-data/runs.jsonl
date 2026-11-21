@@ -1,0 +1,30 @@
+{"routine": "Yesterday's jobs review", "status": "ok", "started": "2026-11-13T06:40:00-06:00", "finished": "2026-11-13T06:52:00-06:00", "records": 31, "host": "dispatch-pc"}
+{"routine": "Deposit match", "status": "ok", "started": "2026-11-13T07:04:00-06:00", "finished": "2026-11-13T07:11:00-06:00", "records": 15, "host": "office-pc-1"}
+{"routine": "Parts order status", "status": "ok", "started": "2026-11-13T07:30:00-06:00", "finished": "2026-11-13T07:38:00-06:00", "records": 12, "host": "shop-laptop"}
+{"routine": "Financing fee check", "status": "ok", "started": "2026-11-13T07:50:00-06:00", "finished": "2026-11-13T07:54:00-06:00", "records": 3, "host": "front-desk-pc"}
+{"routine": "Unpaid invoice list", "status": "ok", "started": "2026-11-13T08:10:00-06:00", "finished": "2026-11-13T08:14:00-06:00", "records": 24, "host": "office-pc-1"}
+{"routine": "Yesterday's jobs review", "status": "ok", "started": "2026-11-16T06:40:00-06:00", "finished": "2026-11-16T06:53:00-06:00", "records": 28, "host": "dispatch-pc"}
+{"routine": "Deposit match", "status": "ok", "started": "2026-11-16T07:05:00-06:00", "finished": "2026-11-16T07:13:00-06:00", "records": 22, "host": "office-pc-1"}
+{"routine": "Parts order status", "status": "ok", "started": "2026-11-16T07:30:00-06:00", "finished": "2026-11-16T07:39:00-06:00", "records": 14, "host": "shop-laptop"}
+{"routine": "Financing fee check", "status": "ok", "started": "2026-11-16T07:50:00-06:00", "finished": "2026-11-16T07:53:00-06:00", "records": 2, "host": "front-desk-pc"}
+{"routine": "Unpaid invoice list", "status": "ok", "started": "2026-11-16T08:10:00-06:00", "finished": "2026-11-16T08:15:00-06:00", "records": 27, "host": "office-pc-1"}
+{"routine": "Maintenance agreement renewals", "status": "ok", "started": "2026-11-16T08:40:00-06:00", "finished": "2026-11-16T08:49:00-06:00", "records": 9, "host": "office-pc-1"}
+{"routine": "Yesterday's jobs review", "status": "ok", "started": "2026-11-17T06:41:00-06:00", "finished": "2026-11-17T06:55:00-06:00", "records": 35, "host": "dispatch-pc"}
+{"routine": "Deposit match", "status": "ok", "started": "2026-11-17T07:04:00-06:00", "finished": "2026-11-17T07:10:00-06:00", "records": 17, "host": "office-pc-1"}
+{"routine": "Parts order status", "status": "ok", "started": "2026-11-17T07:31:00-06:00", "finished": "2026-11-17T07:38:00-06:00", "records": 11, "host": "shop-laptop"}
+{"routine": "Financing fee check", "status": "ok", "started": "2026-11-17T07:51:00-06:00", "finished": "2026-11-17T07:55:00-06:00", "records": 4, "host": "front-desk-pc"}
+{"routine": "Unpaid invoice list", "status": "ok", "started": "2026-11-17T08:11:00-06:00", "finished": "2026-11-17T08:16:00-06:00", "records": 26, "host": "office-pc-1"}
+{"routine": "Old payroll export", "status": "ok", "started": "2026-11-17T16:00:00-06:00", "finished": "2026-11-17T16:06:00-06:00", "records": 8, "host": "office-pc-1"}
+{"routine": "Yesterday's jobs review", "status": "ok", "started": "2026-11-18T06:40:00-06:00", "finished": "2026-11-18T06:51:00-06:00", "records": 30, "host": "dispatch-pc"}
+{"routine": "Deposit match", "status": "ok", "started": "2026-11-18T07:06:00-06:00", "finished": "2026-11-18T07:15:00-06:00", "records": 19, "host": "office-pc-1"}
+{"routine": "Parts order status", "status": "ok", "started": "2026-11-18T07:30:00-06:00", "finished": "2026-11-18T07:40:00-06:00", "records": 13, "host": "shop-laptop"}
+{"routine": "Financing fee check", "status": "failed", "started": "2026-11-18T07:50:00-06:00", "finished": "2026-11-18T07:50:00-06:00", "message": "Connection refused: host unreachable", "host": "front-desk-pc"}
+{"routine": "Unpaid invoice list", "status": "ok", "started": "2026-11-18T08:10:00-06:00", "finished": "2026-11-18T08:14:00-06:00", "records": 25, "host": "office-pc-1"}
+{"routine": "Yesterday's jobs review", "status": "ok", "started": "2026-11-19T06:40:00-06:00", "finished": "2026-11-19T06:54:00-06:00", "records": 33, "host": "dispatch-pc"}
+{"routine": "Deposit match", "status": "ok", "started": "2026-11-19T07:05:00-06:00", "finished": "2026-11-19T07:12:00-06:00", "records": 16, "host": "office-pc-1"}
+{"routine": "Parts order status", "status": "ok", "started": "2026-11-19T07:30:00-06:00", "finished": "2026-11-19T07:37:00-06:00", "records": 12, "host": "shop-laptop"}
+{"routine": "Unpaid invoice list", "status": "ok", "started": "2026-11-19T08:10:00-06:00", "finished": "2026-11-19T08:15:00-06:00", "records": 23, "host": "office-pc-1"}
+{"routine": "Yesterday's jobs review", "status": "failed", "started": "2026-11-20T06:40:00-06:00", "finished": "2026-11-20T06:41:00-06:00", "message": "Session expired: ServiceTitan sent the routine back to the login page", "host": "dispatch-pc"}
+{"routine": "Deposit match", "status": "ok", "started": "2026-11-20T07:04:00-06:00", "finished": "2026-11-20T07:11:00-06:00", "records": 14, "host": "office-pc-1"}
+{"routine": "Parts order status", "status": "started", "started": "2026-11-20T07:45:00-06:00", "host": "shop-laptop"}
+{"routine": "Unpaid invoice list", "status": "ok", "started": "2026-11-20T08:10:00-06:00", "finished": "2026-11-20T08:12:00-06:00", "records": 0, "host": "office-pc-1"}

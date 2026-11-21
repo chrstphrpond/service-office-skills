@@ -1,0 +1,25 @@
+Payment ID,Payment Date,Invoice #,Customer,Type,Amount,Batch,Financing Plan
+P-2001,10/02/2026,47310,Jorge Valdivia,Financing,"6,850.00",,12 months no interest
+P-2002,10/05/2026,47318,Annette Rourke,Financing,"9,400.00",,18 months no interest
+P-2003,10/06/2026,47325,Pelham Bakery LLC,Financing,"14,200.00",,60 months 9.99%
+P-2004,10/06/2026,50325,Dale Pruitt,Visa,485.00,,
+P-2005,10/10/2026,47331,Tomas Eriksen,Financing,"5,275.00",,12 months no interest
+P-2006,10/12/2026,47340,Lucinda Park,Financing,"5,001.00",,12 months no interest
+P-2007,10/13/2026,47346,Greta Lindholm,Financing,"11,350.00",,18 months no interest
+P-2008,10/13/2026,50346,Dale Pruitt,Visa,485.00,,
+P-2009,10/17/2026,47352,Raymond Oyelowo,Financing,"18,900.00",,60 months 9.99%
+P-2010,10/19/2026,47359,Sunita Bhatt,Financing,"4,120.00",,12 months no interest
+P-2011,10/24/2026,47365,Walter Dunmore,Financing,"8,640.00",,18 months no interest
+P-2012,10/24/2026,50365,Dale Pruitt,Visa,485.00,,
+P-2013,10/31/2026,48402,Marisol Quintero,Financing,"5,900.00",,12 months no interest
+P-2014,11/02/2026,48409,Dennis Fairweather,Financing,"21,500.00",,60 months 9.99%
+P-2015,11/07/2026,48414,Ingrid Solberg,Financing,"7,800.00",,24 months no interest
+P-2016,11/07/2026,51414,Dale Pruitt,Visa,485.00,,
+P-2017,11/09/2026,48420,Bashir Karimi,Financing,"10,520.00",,18 months no interest
+P-2018,11/11/2026,48426,Leona Whitcombe,Financing,"3,480.00",,18 months no interest
+P-2019,11/14/2026,48431,Oswin Tate,Financing,"16,000.00",,60 months 9.99%
+P-2020,11/14/2026,51431,Dale Pruitt,Visa,485.00,,
+P-2021,11/17/2026,48438,Felicia Marrow,Financing,"9,200.00",,12 months no interest
+P-2022,11/03/2026,48395,Karl Beaumont,Financing,"12,400.00",,18 months no interest
+P-2023,11/17/2026,48444,Selene Voss,Financing,"4,750.00",,12 months no interest
+P-2024,11/18/2026,48445,Arlo Benning,Check,612.00,,

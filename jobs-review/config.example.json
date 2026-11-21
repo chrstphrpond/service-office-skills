@@ -1,0 +1,29 @@
+{
+  "jobs": {
+    "date_format": "%m/%d/%Y",
+    "columns": {
+      "job": "Job #",
+      "completed": "Completed",
+      "customer": "Customer",
+      "technician": "Technician",
+      "job_type": "Job Type",
+      "status": "Status",
+      "invoice": "Invoice #",
+      "total": "Invoice Total",
+      "balance": "Balance Due",
+      "payment_type": "Payment Type",
+      "summary": "Summary",
+      "recall_of": "Recall Of",
+      "discount": "Discount"
+    }
+  },
+  "completed_statuses": ["Completed", "Done"],
+  "no_charge_job_types": ["Warranty", "Recall"],
+  "billed_later_payment_types": ["On account", "Financing"],
+  "min_summary_length": 25,
+  "minimum_invoice": {
+    "Service call": "89.00",
+    "Maintenance": "129.00"
+  },
+  "max_discount_percent": "15"
+}

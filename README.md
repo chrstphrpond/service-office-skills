@@ -1,43 +1,49 @@
-# Deposit match
+# Service office skills
 
-A Claude skill that matches bank deposits to recorded payments, to the cent, and lists what a person has to look at. It reads two CSV exports and writes a report. It never posts or changes anything.
+Four Claude skills for the office of an HVAC and plumbing company. Each one takes a daily or monthly check that someone does by hand, runs it the same way every time, and lists only what a person has to look at.
 
-Written by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily deposit check. It runs on made-up sample data: the column names and bank wording in `config.example.json` are placeholders until they are set from real exports.
+Written by Christopher Pond Maquidato in November 2026. They run on made-up sample data. The column names, bank wording and fee rates are placeholders until they are set from real exports.
 
-## What's here
+| Skill | The question it answers | Reads |
+|---|---|---|
+| [`deposit-match`](deposit-match/) | Did every deposit reach the bank, to the cent? | Payments export, bank export |
+| [`jobs-review`](jobs-review/) | What was wrong with yesterday's jobs? | Completed jobs export |
+| [`financing-fees`](financing-fees/) | Did the financing company deduct the right fee on each loan? | Funding statement, payments export |
+| [`routine-watchdog`](routine-watchdog/) | Did every routine run today, and if not, why? | Run log, schedule |
 
-| File | What it is |
-|---|---|
-| `SKILL.md` | What Claude reads: when to use the skill, the rules, the steps |
-| `scripts/match_deposits.py` | The matching. Plain Python, no packages to install |
-| `config.example.json` | Column names, deposit sources, financing fee rates |
-| `sample-data/` | One made-up week and the report it produces |
-| `tests/` | 36 tests |
+![The deposit match report for the sample week: 10 of 14 deposits matched, 4 listed for a person with the reason and the numbers](deposit-match/docs/report.png)
 
-## Run it
+One of the four reports. Each skill's folder shows its own.
+
+## How they are built
+
+The four share the same rules.
+
+- **A script does the work, not the model.** Matching, adding up and deciding a status are done by plain Python in whole cents. Claude runs the script and reports what it found.
+- **Read-only.** No skill posts, edits, marks or restarts anything. Each one says what a person should do and stops.
+- **Exact or nothing.** There is no tolerance and no best guess. One cent off, two possible answers or a missing rate goes to a person with the numbers shown.
+- **Bad input stops the run.** A missing column, a bad amount or a duplicate ID writes no report at all.
+- **The totals are proven.** Each script checks that its numbers add up before it writes a report, and refuses to write one if they don't.
+- **Three exit codes.** 0 is clean, 1 means something needs a person, 2 means the input couldn't be read. A scheduler can alert on 1 and 2.
+
+Each folder has a `SKILL.md` that Claude reads, the script, a config file, a sample week with the report it produces, and tests.
+
+## Try one
 
 ```
-python3 scripts/match_deposits.py --payments sample-data/payments.csv --bank sample-data/bank.csv --config config.example.json --out sample-data/report
+cd deposit-match
+python3 scripts/match_deposits.py --payments sample-data/payments.csv --bank sample-data/bank.csv --config config.example.json --out /tmp/deposit-match-try
 python3 -m unittest discover -s tests
 ```
 
-The sample week gives: 10 of 14 deposits matched, 4 for a person. See `sample-data/report/report.md`.
+Python 3.9 or newer. Nothing to install.
 
-## How it keeps wrong numbers out
+## Install as skills
 
-- **The model doesn't do the arithmetic.** A script does, in whole cents. Claude runs it and reports.
-- **Exact or nothing.** No tolerance and no "close enough". One cent off goes to a person with the difference shown.
-- **Never a guess.** Two possible matches, a fee that differs, a plan with no rate: each goes to a person.
-- **Every dollar is accounted for.** Matched plus needs-a-person must equal the bank's deposits, or the script refuses to write a report.
-- **Bad input stops the run.** A duplicate payment ID, a bad amount or a missing column writes nothing.
-- **Read-only.** There is no code path that posts to any system.
-
-## Install as a skill
-
-Copy this folder to `~/.claude/skills/deposit-match/`.
+Copy a skill's folder into `~/.claude/skills/`.
 
 ## Not done yet
 
-- Reading ServiceTitan, QuickBooks Online or the bank directly. It works from CSV exports.
-- A card batch paid out across two deposits, or two batches in one deposit. Both are flagged for a person today.
-- A scheduled daily run with an alert. The exit codes (0, 1, 2) are there for it.
+- Reading ServiceTitan, QuickBooks Online or the bank directly. Every skill works from an export or a log file.
+- Sending the alert. The exit codes are there for it; email or chat delivery is not built.
+- The web dashboard that would show each person their own list. Every skill writes a `report.json` for it.

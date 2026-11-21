@@ -1,0 +1,33 @@
+{
+  "funding": {
+    "date_format": "%m/%d/%Y",
+    "columns": {
+      "date": "Funding Date",
+      "reference": "Reference",
+      "customer": "Customer",
+      "plan": "Plan",
+      "financed": "Financed Amount",
+      "fee": "Dealer Fee",
+      "net": "Net Funded"
+    }
+  },
+  "payments": {
+    "date_format": "%m/%d/%Y",
+    "columns": {
+      "id": "Payment ID",
+      "date": "Payment Date",
+      "invoice": "Invoice #",
+      "customer": "Customer",
+      "method": "Type",
+      "amount": "Amount",
+      "plan": "Financing Plan"
+    }
+  },
+  "financing_methods": ["Financing"],
+  "funding_window_days": 14,
+  "plan_rates": {
+    "12 months no interest": "5.50",
+    "18 months no interest": "7.25",
+    "60 months 9.99%": "3.00"
+  }
+}

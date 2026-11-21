@@ -1,0 +1,70 @@
+{
+  "timezone": "America/Chicago",
+  "failure_patterns": [
+    {
+      "words": ["session expired", "login", "signed out", "401"],
+      "cause": "Signed out of the website",
+      "check": "Sign in to the site by hand, then run the routine again."
+    },
+    {
+      "words": ["connection refused", "host unreachable", "offline"],
+      "cause": "Computer was off or offline",
+      "check": "Check the computer that runs it is on and online, then run the routine again."
+    },
+    {
+      "words": ["timed out"],
+      "cause": "Timed out",
+      "check": "Check the site is up and not slow, then run the routine again."
+    }
+  ],
+  "routines": [
+    {
+      "name": "Deposit match",
+      "owner": "Priya Nandakumar",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "due_by": "07:30",
+      "max_minutes": 20,
+      "expect_records": true
+    },
+    {
+      "name": "Yesterday's jobs review",
+      "owner": "Marcus Oyelaran",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "due_by": "07:00",
+      "max_minutes": 30,
+      "expect_records": true
+    },
+    {
+      "name": "Financing fee check",
+      "owner": "Priya Nandakumar",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "due_by": "08:00",
+      "max_minutes": 15,
+      "expect_records": false
+    },
+    {
+      "name": "Unpaid invoice list",
+      "owner": "Tessa Lindqvist",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "due_by": "08:30",
+      "max_minutes": 15,
+      "expect_records": true
+    },
+    {
+      "name": "Maintenance agreement renewals",
+      "owner": "Tessa Lindqvist",
+      "days": ["Mon"],
+      "due_by": "09:00",
+      "max_minutes": 25,
+      "expect_records": true
+    },
+    {
+      "name": "Parts order status",
+      "owner": "Marcus Oyelaran",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "due_by": "07:45",
+      "max_minutes": 20,
+      "expect_records": true
+    }
+  ]
+}

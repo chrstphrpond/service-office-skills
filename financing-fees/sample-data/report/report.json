@@ -1,0 +1,463 @@
+{
+ "first_funding_date": "2026-10-05",
+ "last_funding_date": "2026-11-20",
+ "as_of": "2026-11-20",
+ "note": "All money is in cents. The fee totals are for a person to post; the tool posts nothing.",
+ "totals_cents": {
+  "count": 18,
+  "financed": 18017600,
+  "charged": 872790,
+  "expected": 800940,
+  "charged_rated": 810390,
+  "unrated": 1,
+  "net": 17144811,
+  "label": "All",
+  "difference": 9450,
+  "effective_rate": "4.84%",
+  "items_for_a_person": 8
+ },
+ "by_plan": [
+  {
+   "count": 8,
+   "financed": 4613600,
+   "charged": 253749,
+   "expected": 253749,
+   "charged_rated": 253749,
+   "unrated": 0,
+   "net": 4359851,
+   "label": "12 months no interest",
+   "difference": 0,
+   "effective_rate": "5.50%"
+  },
+  {
+   "count": 4,
+   "financed": 3964000,
+   "charged": 287391,
+   "expected": 287391,
+   "charged_rated": 287391,
+   "unrated": 0,
+   "net": 3676610,
+   "label": "18 months no interest",
+   "difference": 0,
+   "effective_rate": "7.25%"
+  },
+  {
+   "count": 1,
+   "financed": 780000,
+   "charged": 62400,
+   "expected": 0,
+   "charged_rated": 0,
+   "unrated": 1,
+   "net": 717600,
+   "label": "24 months no interest",
+   "difference": 0,
+   "effective_rate": "8.00%"
+  },
+  {
+   "count": 5,
+   "financed": 8660000,
+   "charged": 269250,
+   "expected": 259800,
+   "charged_rated": 269250,
+   "unrated": 0,
+   "net": 8390750,
+   "label": "60 months 9.99%",
+   "difference": 9450,
+   "effective_rate": "3.11%"
+  }
+ ],
+ "by_month": [
+  {
+   "count": 10,
+   "financed": 9004600,
+   "charged": 473387,
+   "expected": 463937,
+   "charged_rated": 473387,
+   "unrated": 0,
+   "net": 8531214,
+   "label": "Oct 2026",
+   "difference": 9450,
+   "effective_rate": "5.26%"
+  },
+  {
+   "count": 8,
+   "financed": 9013000,
+   "charged": 399403,
+   "expected": 337003,
+   "charged_rated": 337003,
+   "unrated": 1,
+   "net": 8613597,
+   "label": "Nov 2026",
+   "difference": 0,
+   "effective_rate": "4.43%"
+  }
+ ],
+ "needs_person": [
+  {
+   "check": "fee_differs",
+   "reference": "47352",
+   "customer": "Raymond Oyelowo",
+   "date": "2026-10-20",
+   "row": 8,
+   "message": "The fee differs from the plan rate. Plan '60 months 9.99%' at 3.00% on $18,900.00 should be $567.00. Charged $661.50, $94.50 over.",
+   "numbers": {
+    "financed": 1890000,
+    "expected": 56700,
+    "charged": 66150,
+    "difference": 9450
+   }
+  },
+  {
+   "check": "arithmetic",
+   "reference": "47365",
+   "customer": "Walter Dunmore",
+   "date": "2026-10-27",
+   "row": 10,
+   "message": "The statement doesn't add up. $8,640.00 less the fee $626.40 is $8,013.60. The statement shows $8,013.61 funded, $0.01 more.",
+   "numbers": {
+    "financed": 864000,
+    "charged": 62640,
+    "net": 801361,
+    "calculated_net": 801360,
+    "difference": 1
+   }
+  },
+  {
+   "check": "no_payment",
+   "reference": "47371",
+   "customer": "Cedric Anselm",
+   "date": "2026-10-30",
+   "row": 11,
+   "message": "Funded $6,310.00, but no financed payment for invoice 47371 is in the payments export.",
+   "numbers": {
+    "financed": 631000
+   }
+  },
+  {
+   "check": "not_funded",
+   "reference": "48395",
+   "customer": "Karl Beaumont",
+   "date": "2026-11-03",
+   "row": null,
+   "message": "Financed payment P-2022 ($12,400.00) is 17 days old and not on the statement. The window is 14 days.",
+   "numbers": {
+    "financed": 1240000,
+    "days": 17,
+    "window_days": 14
+   }
+  },
+  {
+   "check": "no_rate",
+   "reference": "48414",
+   "customer": "Ingrid Solberg",
+   "date": "2026-11-10",
+   "row": 14,
+   "message": "No fee rate is set for plan '24 months no interest', so the fee of $624.00 on $7,800.00 can't be checked. Nothing was guessed.",
+   "numbers": {
+    "financed": 780000,
+    "charged": 62400
+   }
+  },
+  {
+   "check": "amount_differs",
+   "reference": "48420",
+   "customer": "Bashir Karimi",
+   "date": "2026-11-12",
+   "row": 15,
+   "message": "The financed amount differs. The statement says $10,250.00; payment P-2017 is $10,520.00, $270.00 less on the statement.",
+   "numbers": {
+    "financed": 1025000,
+    "payment": 1052000,
+    "difference": -27000
+   }
+  },
+  {
+   "check": "plan_differs",
+   "reference": "48426",
+   "customer": "Leona Whitcombe",
+   "date": "2026-11-14",
+   "row": 16,
+   "message": "The plan differs. The statement says '12 months no interest'; payment P-2018 says '18 months no interest'. Fees were checked against the statement's plan.",
+   "numbers": {
+    "financed": 348000
+   }
+  },
+  {
+   "check": "funded_twice",
+   "reference": "48431",
+   "customer": "Oswin Tate",
+   "date": "2026-11-17",
+   "row": 17,
+   "message": "Reference 48431 was funded 2 times: Nov 17 $16,000.00 (row 17), Nov 19 $16,000.00 (row 18). Together the financed amounts come to $32,000.00.",
+   "numbers": {
+    "times": 2,
+    "financed_total": 3200000,
+    "fee_total": 96000
+   }
+  }
+ ],
+ "lines": [
+  {
+   "row": 2,
+   "date": "2026-10-05",
+   "reference": "47310",
+   "customer": "Jorge Valdivia",
+   "plan": "12 months no interest",
+   "rate_percent": "5.50",
+   "financed": 685000,
+   "fee_charged": 37675,
+   "fee_expected": 37675,
+   "net_funded": 647325,
+   "net_gap": 0
+  },
+  {
+   "row": 3,
+   "date": "2026-10-08",
+   "reference": "47318",
+   "customer": "Annette Rourke",
+   "plan": "18 months no interest",
+   "rate_percent": "7.25",
+   "financed": 940000,
+   "fee_charged": 68150,
+   "fee_expected": 68150,
+   "net_funded": 871850,
+   "net_gap": 0
+  },
+  {
+   "row": 4,
+   "date": "2026-10-09",
+   "reference": "47325",
+   "customer": "Pelham Bakery LLC",
+   "plan": "60 months 9.99%",
+   "rate_percent": "3.00",
+   "financed": 1420000,
+   "fee_charged": 42600,
+   "fee_expected": 42600,
+   "net_funded": 1377400,
+   "net_gap": 0
+  },
+  {
+   "row": 5,
+   "date": "2026-10-13",
+   "reference": "47331",
+   "customer": "Tomas Eriksen",
+   "plan": "12 months no interest",
+   "rate_percent": "5.50",
+   "financed": 527500,
+   "fee_charged": 29013,
+   "fee_expected": 29013,
+   "net_funded": 498487,
+   "net_gap": 0
+  },
+  {
+   "row": 6,
+   "date": "2026-10-15",
+   "reference": "47340",
+   "customer": "Lucinda Park",
+   "plan": "12 months no interest",
+   "rate_percent": "5.50",
+   "financed": 500100,
+   "fee_charged": 27506,
+   "fee_expected": 27506,
+   "net_funded": 472594,
+   "net_gap": 0
+  },
+  {
+   "row": 7,
+   "date": "2026-10-16",
+   "reference": "47346",
+   "customer": "Greta Lindholm",
+   "plan": "18 months no interest",
+   "rate_percent": "7.25",
+   "financed": 1135000,
+   "fee_charged": 82288,
+   "fee_expected": 82288,
+   "net_funded": 1052712,
+   "net_gap": 0
+  },
+  {
+   "row": 8,
+   "date": "2026-10-20",
+   "reference": "47352",
+   "customer": "Raymond Oyelowo",
+   "plan": "60 months 9.99%",
+   "rate_percent": "3.00",
+   "financed": 1890000,
+   "fee_charged": 66150,
+   "fee_expected": 56700,
+   "net_funded": 1823850,
+   "net_gap": 0
+  },
+  {
+   "row": 9,
+   "date": "2026-10-22",
+   "reference": "47359",
+   "customer": "Sunita Bhatt",
+   "plan": "12 months no interest",
+   "rate_percent": "5.50",
+   "financed": 412000,
+   "fee_charged": 22660,
+   "fee_expected": 22660,
+   "net_funded": 389340,
+   "net_gap": 0
+  },
+  {
+   "row": 10,
+   "date": "2026-10-27",
+   "reference": "47365",
+   "customer": "Walter Dunmore",
+   "plan": "18 months no interest",
+   "rate_percent": "7.25",
+   "financed": 864000,
+   "fee_charged": 62640,
+   "fee_expected": 62640,
+   "net_funded": 801361,
+   "net_gap": 1
+  },
+  {
+   "row": 11,
+   "date": "2026-10-30",
+   "reference": "47371",
+   "customer": "Cedric Anselm",
+   "plan": "12 months no interest",
+   "rate_percent": "5.50",
+   "financed": 631000,
+   "fee_charged": 34705,
+   "fee_expected": 34705,
+   "net_funded": 596295,
+   "net_gap": 0
+  },
+  {
+   "row": 12,
+   "date": "2026-11-03",
+   "reference": "48402",
+   "customer": "Marisol Quintero",
+   "plan": "12 months no interest",
+   "rate_percent": "5.50",
+   "financed": 590000,
+   "fee_charged": 32450,
+   "fee_expected": 32450,
+   "net_funded": 557550,
+   "net_gap": 0
+  },
+  {
+   "row": 13,
+   "date": "2026-11-05",
+   "reference": "48409",
+   "customer": "Dennis Fairweather",
+   "plan": "60 months 9.99%",
+   "rate_percent": "3.00",
+   "financed": 2150000,
+   "fee_charged": 64500,
+   "fee_expected": 64500,
+   "net_funded": 2085500,
+   "net_gap": 0
+  },
+  {
+   "row": 14,
+   "date": "2026-11-10",
+   "reference": "48414",
+   "customer": "Ingrid Solberg",
+   "plan": "24 months no interest",
+   "rate_percent": null,
+   "financed": 780000,
+   "fee_charged": 62400,
+   "fee_expected": null,
+   "net_funded": 717600,
+   "net_gap": 0
+  },
+  {
+   "row": 15,
+   "date": "2026-11-12",
+   "reference": "48420",
+   "customer": "Bashir Karimi",
+   "plan": "18 months no interest",
+   "rate_percent": "7.25",
+   "financed": 1025000,
+   "fee_charged": 74313,
+   "fee_expected": 74313,
+   "net_funded": 950687,
+   "net_gap": 0
+  },
+  {
+   "row": 16,
+   "date": "2026-11-14",
+   "reference": "48426",
+   "customer": "Leona Whitcombe",
+   "plan": "12 months no interest",
+   "rate_percent": "5.50",
+   "financed": 348000,
+   "fee_charged": 19140,
+   "fee_expected": 19140,
+   "net_funded": 328860,
+   "net_gap": 0
+  },
+  {
+   "row": 17,
+   "date": "2026-11-17",
+   "reference": "48431",
+   "customer": "Oswin Tate",
+   "plan": "60 months 9.99%",
+   "rate_percent": "3.00",
+   "financed": 1600000,
+   "fee_charged": 48000,
+   "fee_expected": 48000,
+   "net_funded": 1552000,
+   "net_gap": 0
+  },
+  {
+   "row": 18,
+   "date": "2026-11-19",
+   "reference": "48431",
+   "customer": "Oswin Tate",
+   "plan": "60 months 9.99%",
+   "rate_percent": "3.00",
+   "financed": 1600000,
+   "fee_charged": 48000,
+   "fee_expected": 48000,
+   "net_funded": 1552000,
+   "net_gap": 0
+  },
+  {
+   "row": 19,
+   "date": "2026-11-20",
+   "reference": "48438",
+   "customer": "Felicia Marrow",
+   "plan": "12 months no interest",
+   "rate_percent": "5.50",
+   "financed": 920000,
+   "fee_charged": 50600,
+   "fee_expected": 50600,
+   "net_funded": 869400,
+   "net_gap": 0
+  }
+ ],
+ "not_funded_yet": [
+  {
+   "payment": {
+    "id": "P-2022",
+    "date": "2026-11-03",
+    "invoice": "48395",
+    "customer": "Karl Beaumont",
+    "method": "Financing",
+    "amount": 1240000,
+    "plan": "18 months no interest"
+   },
+   "days": 17,
+   "late": true
+  },
+  {
+   "payment": {
+    "id": "P-2023",
+    "date": "2026-11-17",
+    "invoice": "48444",
+    "customer": "Selene Voss",
+    "method": "Financing",
+    "amount": 475000,
+    "plan": "12 months no interest"
+   },
+   "days": 3,
+   "late": false
+  }
+ ]
+}

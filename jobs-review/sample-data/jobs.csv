@@ -1,0 +1,27 @@
+Job #,Completed,Customer,Technician,Job Type,Status,Invoice #,Invoice Total,Balance Due,Payment Type,Summary,Recall Of,Discount
+70101,11/20/2026,Marlow Family,Dale Brennick,Service call,Completed,91501,189.00,0.00,Visa,Replaced failed run capacitor on the condenser. Unit cooling again.,,0.00
+70102,11/20/2026,Oakridge Dental,Dale Brennick,Maintenance,Completed,91502,249.00,0.00,Check,Tune up on two rooftop units. Changed filters. No issues found.,,0.00
+70103,11/20/2026,Brightwater Cafe,Dale Brennick,Service call,Completed,,,,,Cleared the grease trap line and tested all floor drains.,,
+70104,11/20/2026,Ellis Park Apartments,Dale Brennick,Install,Completed,91503,6400.00,6400.00,On account,Installed a 50 gallon water heater in unit 4B and removed the old tank.,,0.00
+70105,11/20/2026,Nora Tindall,Dale Brennick,Service call,Completed,91504,129.00,0.00,Visa,Reset the thermostat and swapped the filter. Advised on an upgrade.,,0.00
+70111,11/20/2026,Gil Pemberton,Priya Anand,Service call,Completed,91505,0.00,0.00,,Checked the furnace after a no-heat call. It was a tripped breaker.,,0.00
+70112,11/20/2026,Harbor Row Bakery,Priya Anand,Maintenance,Completed,91506,179.00,0.00,ACH,Cleaned the evaporator coil on the walk-in and checked refrigerant.,,0.00
+70113,11/20/2026,Lena Castellan,Priya Anand,Install,Completed,91507,5200.00,0.00,Visa,Installed a new 3 ton heat pump and a matching air handler. Tested.,,0.00
+70114,11/20/2026,Quinn Abernathy,Priya Anand,Service call,Completed,91508,215.00,215.00,Check,Replaced a leaking shutoff valve under the kitchen sink.,,0.00
+70115,11/20/2026,Pike Street Realty,Priya Anand,Warranty,Completed,91509,0.00,0.00,,Warranty replacement of the blower motor under the five year parts plan.,,0.00
+70121,11/20/2026,Ivy Montrose,Tomas Verrill,Service call,Completed,91510,59.00,0.00,Cash,Looked at a noisy bathroom fan. Tightened the mount. Fan is quiet.,,0.00
+70122,11/20/2026,Dunmore Hardware,Tomas Verrill,Maintenance,Completed,91511,149.00,0.00,Visa,Seasonal check of the shop furnace. Cleaned the burners.,,0.00
+70123,11/20/2026,Oscar Lindqvist,Tomas Verrill,Service call,Completed,91512,99.00,0.00,Visa,done,,0.00
+70124,11/20/2026,Fennimore Church,Tomas Verrill,Install,Completed,91513,8450.00,8450.00,Financing,Replaced the sanctuary rooftop unit and reconnected the controls.,,0.00
+70125,11/20/2026,Rhea Vandermolen,Tomas Verrill,Service call,Completed,91514,175.00,0.00,Visa,Unclogged the main drain and ran the camera to check the line.,,0.00
+70131,11/20/2026,Cobalt Yoga Studio,Wen Soraya,Install,Completed,91515,3400.00,0.00,ACH,Installed a ductless mini split in the studio room. Tested and balanced.,,850.00
+70132,11/20/2026,Sable Ridge HOA,Wen Soraya,Service call,Completed,91516,145.00,0.00,Visa,Repaired a frozen hose bib at the pool house and insulated the line.,,0.00
+70133,11/20/2026,Marlow Family,Wen Soraya,Recall,Completed,91517,0.00,0.00,,Return visit. The new capacitor failed. Replaced it again at no charge.,70101,0.00
+70134,11/20/2026,Aldous Pruitt,Wen Soraya,Maintenance,Completed,91518,129.00,0.00,Check,Annual tune up of the gas furnace. Replaced the igniter as a precaution.,,0.00
+70135,11/20/2026,Kestrel Property Group,Wen Soraya,Service call,Completed,91519,349.00,0.00,Visa,Replaced a cracked condensate pump and cleared the drain line.,,0.00
+70141,11/20/2026,Ada Ferreira-Cole,Gus Ferrante,Service call,Completed,91520,189.00,0.00,Visa,Fixed a running toilet and replaced the supply line in the guest bath.,,0.00
+70142,11/20/2026,Winslow Carpentry,Gus Ferrante,Recall,Completed,91521,0.00,0.00,,Return visit for a water heater that kept tripping. Replaced the thermostat.,70998,0.00
+70143,11/20/2026,Tamsin Okoye,Gus Ferrante,Service call,Completed,91520,205.00,0.00,Visa,Replaced a worn blower belt and lubricated the motor bearings.,,0.00
+70144,11/20/2026,Beacon Hill Laundromat,Gus Ferrante,Maintenance,Completed,91522,259.00,0.00,ACH,Descaled two commercial water heaters and checked the relief valves.,,0.00
+70151,11/20/2026,Delphine Marsh,Dale Brennick,Service call,Canceled,,,,,Customer canceled at the door.,,
+70152,11/20/2026,Roland Ames,Tomas Verrill,Install,In progress,,,,,Rough-in done. Finish work is scheduled for Monday.,,

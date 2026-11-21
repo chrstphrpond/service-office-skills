@@ -1,0 +1,157 @@
+{
+ "now": "2026-11-20T09:00:00-06:00",
+ "timezone": "America/Chicago",
+ "local_date": "2026-11-20",
+ "scheduled_today": 5,
+ "counts": {
+  "Failed": 1,
+  "Stuck": 1,
+  "Missed": 1,
+  "Did nothing": 1,
+  "Running": 0,
+  "Not due yet": 0,
+  "OK": 1
+ },
+ "not_scheduled_today": 1,
+ "needs_person_count": 4,
+ "routines": [
+  {
+   "name": "Deposit match",
+   "owner": "Priya Nandakumar",
+   "scheduled_today": true,
+   "due_by": "07:30",
+   "status": "OK",
+   "needs_person": false,
+   "cause": null,
+   "check": null,
+   "message": null,
+   "host": "office-pc-1",
+   "run_started": "2026-11-20T07:04:00-06:00",
+   "run_finished": "2026-11-20T07:11:00-06:00",
+   "seconds": 420,
+   "run_still_open": false,
+   "records": 14,
+   "last_finish": "2026-11-20T07:11:00-06:00",
+   "repeated_trouble": null
+  },
+  {
+   "name": "Yesterday's jobs review",
+   "owner": "Marcus Oyelaran",
+   "scheduled_today": true,
+   "due_by": "07:00",
+   "status": "Failed",
+   "needs_person": true,
+   "cause": "Signed out of the website",
+   "check": "Sign in to the site by hand, then run the routine again.",
+   "message": "Session expired: ServiceTitan sent the routine back to the login page",
+   "host": "dispatch-pc",
+   "run_started": "2026-11-20T06:40:00-06:00",
+   "run_finished": "2026-11-20T06:41:00-06:00",
+   "seconds": 60,
+   "run_still_open": false,
+   "records": null,
+   "last_finish": "2026-11-20T06:41:00-06:00",
+   "repeated_trouble": null
+  },
+  {
+   "name": "Financing fee check",
+   "owner": "Priya Nandakumar",
+   "scheduled_today": true,
+   "due_by": "08:00",
+   "status": "Missed",
+   "needs_person": true,
+   "cause": null,
+   "check": "Make sure the computer that runs it is on and online, and that the routine is still scheduled.",
+   "message": null,
+   "host": null,
+   "run_started": null,
+   "run_finished": null,
+   "seconds": null,
+   "run_still_open": false,
+   "records": null,
+   "last_finish": "2026-11-18T07:50:00-06:00",
+   "repeated_trouble": {
+    "days_checked": 5,
+    "bad_days": [
+     {
+      "date": "2026-11-18",
+      "outcome": "failed"
+     },
+     {
+      "date": "2026-11-19",
+      "outcome": "missed"
+     },
+     {
+      "date": "2026-11-20",
+      "outcome": "missed"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Unpaid invoice list",
+   "owner": "Tessa Lindqvist",
+   "scheduled_today": true,
+   "due_by": "08:30",
+   "status": "Did nothing",
+   "needs_person": true,
+   "cause": null,
+   "check": "Make sure the site or export it reads has data for today.",
+   "message": null,
+   "host": "office-pc-1",
+   "run_started": "2026-11-20T08:10:00-06:00",
+   "run_finished": "2026-11-20T08:12:00-06:00",
+   "seconds": 120,
+   "run_still_open": false,
+   "records": 0,
+   "last_finish": "2026-11-20T08:12:00-06:00",
+   "repeated_trouble": null
+  },
+  {
+   "name": "Maintenance agreement renewals",
+   "owner": "Tessa Lindqvist",
+   "scheduled_today": false,
+   "due_by": "09:00",
+   "status": "Not scheduled today",
+   "needs_person": false,
+   "cause": null,
+   "check": null,
+   "message": null,
+   "host": null,
+   "run_started": null,
+   "run_finished": null,
+   "seconds": null,
+   "run_still_open": false,
+   "records": null,
+   "last_finish": "2026-11-16T08:49:00-06:00",
+   "repeated_trouble": null
+  },
+  {
+   "name": "Parts order status",
+   "owner": "Marcus Oyelaran",
+   "scheduled_today": true,
+   "due_by": "07:45",
+   "status": "Stuck",
+   "needs_person": true,
+   "cause": null,
+   "check": "Look at the computer that runs it. It may be frozen or waiting on a sign-in. Stop it and run it again by hand.",
+   "message": null,
+   "host": "shop-laptop",
+   "run_started": "2026-11-20T07:45:00-06:00",
+   "run_finished": null,
+   "seconds": 4500,
+   "run_still_open": true,
+   "records": null,
+   "last_finish": "2026-11-19T07:37:00-06:00",
+   "repeated_trouble": null
+  }
+ ],
+ "not_in_schedule": [
+  {
+   "routine": "Old payroll export",
+   "runs": 1,
+   "last_started": "2026-11-17T16:00:00-06:00"
+  }
+ ],
+ "notes": []
+}
