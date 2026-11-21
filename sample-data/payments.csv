@@ -1,0 +1,23 @@
+Payment ID,Payment Date,Invoice #,Customer,Type,Amount,Batch,Financing Plan
+P-1001,11/16/2026,48201,Dana Whitfield,Visa,389.00,,
+P-1002,11/16/2026,48202,Marcus Oyelaran,Mastercard,"1,245.50",,
+P-1003,11/16/2026,48203,Ruth Calloway,Check,220.00,,
+P-1004,11/16/2026,48204,Glen Ibarra,Amex,612.75,,
+P-1005,11/16/2026,48205,Tessa Brandt,Financing,"8,450.00",,12 months no interest
+P-1006,11/17/2026,48206,Hollis Farms LLC,ACH,"3,120.00",,
+P-1007,11/17/2026,48207,Priya Nandakumar,Visa,189.00,,
+P-1008,11/17/2026,48208,Owen Stricklin,Visa,742.30,,
+P-1009,11/17/2026,48209,Carla Mendez,Cash,95.00,,
+P-1010,11/17/2026,48210,Ben Tolliver,Check,"1,480.00",,
+P-1011,11/17/2026,48201,Dana Whitfield,Visa,-50.00,,
+P-1012,11/18/2026,48212,Juniper Dental Group,ACH,"3,120.00",,
+P-1013,11/18/2026,48213,Lyle Praeger,Mastercard,"2,310.00",,
+P-1014,11/18/2026,48214,Amara Okafor,Discover,164.99,,
+P-1015,11/18/2026,48215,Sam Rios,Check,220.00,,
+P-1016,11/18/2026,48216,Nell Hargrove,Financing,"12,600.00",,60 months 9.99%
+P-1017,11/19/2026,48217,Ed Kowalczyk,Visa,455.00,,
+P-1018,11/19/2026,48218,Faye Lindqvist,Check,310.25,,
+P-1019,11/19/2026,48219,Rosa Delgado,Financing,"6,200.00",,18 months no interest
+P-1020,11/19/2026,48220,Curtis Vane,Amex,980.00,,
+P-1021,11/20/2026,48221,Mina Sato,Visa,275.00,,
+P-1022,11/20/2026,48222,Paul Everhart,Check,640.00,,

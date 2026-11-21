@@ -1,0 +1,66 @@
+{
+  "payments": {
+    "date_format": "%m/%d/%Y",
+    "columns": {
+      "id": "Payment ID",
+      "date": "Payment Date",
+      "invoice": "Invoice #",
+      "customer": "Customer",
+      "method": "Type",
+      "amount": "Amount",
+      "batch": "Batch",
+      "plan": "Financing Plan"
+    }
+  },
+  "bank": {
+    "date_format": "%m/%d/%Y",
+    "columns": {
+      "date": "Date",
+      "description": "Description",
+      "amount": "Amount",
+      "reference": "Reference"
+    }
+  },
+  "sources": [
+    {
+      "name": "Cards",
+      "mode": "batch",
+      "methods": ["Visa", "Mastercard", "Discover"],
+      "bank_patterns": ["BANKCARD"],
+      "window_days": 4
+    },
+    {
+      "name": "Amex",
+      "mode": "batch",
+      "methods": ["Amex"],
+      "bank_patterns": ["AMEX"],
+      "window_days": 5
+    },
+    {
+      "name": "Financing",
+      "mode": "net_of_fee",
+      "methods": ["Financing"],
+      "bank_patterns": ["FINCO FUNDING"],
+      "window_days": 7
+    },
+    {
+      "name": "Checks and cash",
+      "mode": "subset",
+      "methods": ["Check", "Cash"],
+      "bank_patterns": ["COUNTER DEPOSIT", "MOBILE DEPOSIT"],
+      "window_days": 7
+    },
+    {
+      "name": "ACH",
+      "mode": "one_to_one",
+      "methods": ["ACH"],
+      "bank_patterns": ["ACH CREDIT"],
+      "window_days": 4
+    }
+  ],
+  "financing_plans": {
+    "12 months no interest": "5.50",
+    "18 months no interest": "7.25",
+    "60 months 9.99%": "3.00"
+  }
+}

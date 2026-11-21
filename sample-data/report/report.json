@@ -1,0 +1,470 @@
+{
+ "as_of": "2026-11-20",
+ "totals_cents": {
+  "bank_deposits": 3626944,
+  "matched": 2270774,
+  "needs_person": 1356170,
+  "fees": 46475,
+  "payments": 4376879,
+  "payments_matched": 2317249,
+  "payments_open": 2059630
+ },
+ "matched": [
+  {
+   "bank": {
+    "row": 3,
+    "date": "2026-11-17",
+    "description": "BANKCARD MTOT DEP",
+    "amount": 163450,
+    "reference": "BC1116"
+   },
+   "source": "Cards",
+   "gross": 163450,
+   "fee": 0,
+   "payments": [
+    {
+     "id": "P-1001",
+     "date": "2026-11-16",
+     "invoice": "48201",
+     "customer": "Dana Whitfield",
+     "method": "Visa",
+     "amount": 38900,
+     "batch": "",
+     "plan": ""
+    },
+    {
+     "id": "P-1002",
+     "date": "2026-11-16",
+     "invoice": "48202",
+     "customer": "Marcus Oyelaran",
+     "method": "Mastercard",
+     "amount": 124550,
+     "batch": "",
+     "plan": ""
+    }
+   ]
+  },
+  {
+   "bank": {
+    "row": 4,
+    "date": "2026-11-17",
+    "description": "COUNTER DEPOSIT",
+    "amount": 179500,
+    "reference": "CD0331"
+   },
+   "source": "Checks and cash",
+   "gross": 179500,
+   "fee": 0,
+   "payments": [
+    {
+     "id": "P-1003",
+     "date": "2026-11-16",
+     "invoice": "48203",
+     "customer": "Ruth Calloway",
+     "method": "Check",
+     "amount": 22000,
+     "batch": "",
+     "plan": ""
+    },
+    {
+     "id": "P-1009",
+     "date": "2026-11-17",
+     "invoice": "48209",
+     "customer": "Carla Mendez",
+     "method": "Cash",
+     "amount": 9500,
+     "batch": "",
+     "plan": ""
+    },
+    {
+     "id": "P-1010",
+     "date": "2026-11-17",
+     "invoice": "48210",
+     "customer": "Ben Tolliver",
+     "method": "Check",
+     "amount": 148000,
+     "batch": "",
+     "plan": ""
+    }
+   ]
+  },
+  {
+   "bank": {
+    "row": 5,
+    "date": "2026-11-18",
+    "description": "AMEX SETTLEMENT",
+    "amount": 61275,
+    "reference": "AX1116"
+   },
+   "source": "Amex",
+   "gross": 61275,
+   "fee": 0,
+   "payments": [
+    {
+     "id": "P-1004",
+     "date": "2026-11-16",
+     "invoice": "48204",
+     "customer": "Glen Ibarra",
+     "method": "Amex",
+     "amount": 61275,
+     "batch": "",
+     "plan": ""
+    }
+   ]
+  },
+  {
+   "bank": {
+    "row": 7,
+    "date": "2026-11-18",
+    "description": "ACH CREDIT HOLLIS FARMS LLC",
+    "amount": 312000,
+    "reference": "AC7781"
+   },
+   "source": "ACH",
+   "gross": 312000,
+   "fee": 0,
+   "payments": [
+    {
+     "id": "P-1006",
+     "date": "2026-11-17",
+     "invoice": "48206",
+     "customer": "Hollis Farms LLC",
+     "method": "ACH",
+     "amount": 312000,
+     "batch": "",
+     "plan": ""
+    }
+   ]
+  },
+  {
+   "bank": {
+    "row": 8,
+    "date": "2026-11-18",
+    "description": "FINCO FUNDING INV 48205",
+    "amount": 798525,
+    "reference": "FF2204"
+   },
+   "source": "Financing",
+   "gross": 845000,
+   "fee": 46475,
+   "payments": [
+    {
+     "id": "P-1005",
+     "date": "2026-11-16",
+     "invoice": "48205",
+     "customer": "Tessa Brandt",
+     "method": "Financing",
+     "amount": 845000,
+     "batch": "",
+     "plan": "12 months no interest"
+    }
+   ]
+  },
+  {
+   "bank": {
+    "row": 9,
+    "date": "2026-11-19",
+    "description": "ACH CREDIT JUNIPER DENTAL GROUP",
+    "amount": 312000,
+    "reference": "AC7802"
+   },
+   "source": "ACH",
+   "gross": 312000,
+   "fee": 0,
+   "payments": [
+    {
+     "id": "P-1012",
+     "date": "2026-11-18",
+     "invoice": "48212",
+     "customer": "Juniper Dental Group",
+     "method": "ACH",
+     "amount": 312000,
+     "batch": "",
+     "plan": ""
+    }
+   ]
+  },
+  {
+   "bank": {
+    "row": 10,
+    "date": "2026-11-19",
+    "description": "BANKCARD MTOT DEP",
+    "amount": 247499,
+    "reference": "BC1118"
+   },
+   "source": "Cards",
+   "gross": 247499,
+   "fee": 0,
+   "payments": [
+    {
+     "id": "P-1013",
+     "date": "2026-11-18",
+     "invoice": "48213",
+     "customer": "Lyle Praeger",
+     "method": "Mastercard",
+     "amount": 231000,
+     "batch": "",
+     "plan": ""
+    },
+    {
+     "id": "P-1014",
+     "date": "2026-11-18",
+     "invoice": "48214",
+     "customer": "Amara Okafor",
+     "method": "Discover",
+     "amount": 16499,
+     "batch": "",
+     "plan": ""
+    }
+   ]
+  },
+  {
+   "bank": {
+    "row": 11,
+    "date": "2026-11-20",
+    "description": "COUNTER DEPOSIT",
+    "amount": 53025,
+    "reference": "CD0338"
+   },
+   "source": "Checks and cash",
+   "gross": 53025,
+   "fee": 0,
+   "payments": [
+    {
+     "id": "P-1015",
+     "date": "2026-11-18",
+     "invoice": "48215",
+     "customer": "Sam Rios",
+     "method": "Check",
+     "amount": 22000,
+     "batch": "",
+     "plan": ""
+    },
+    {
+     "id": "P-1018",
+     "date": "2026-11-19",
+     "invoice": "48218",
+     "customer": "Faye Lindqvist",
+     "method": "Check",
+     "amount": 31025,
+     "batch": "",
+     "plan": ""
+    }
+   ]
+  },
+  {
+   "bank": {
+    "row": 13,
+    "date": "2026-11-20",
+    "description": "BANKCARD MTOT DEP",
+    "amount": 45500,
+    "reference": "BC1119"
+   },
+   "source": "Cards",
+   "gross": 45500,
+   "fee": 0,
+   "payments": [
+    {
+     "id": "P-1017",
+     "date": "2026-11-19",
+     "invoice": "48217",
+     "customer": "Ed Kowalczyk",
+     "method": "Visa",
+     "amount": 45500,
+     "batch": "",
+     "plan": ""
+    }
+   ]
+  },
+  {
+   "bank": {
+    "row": 14,
+    "date": "2026-11-20",
+    "description": "AMEX SETTLEMENT",
+    "amount": 98000,
+    "reference": "AX1119"
+   },
+   "source": "Amex",
+   "gross": 98000,
+   "fee": 0,
+   "payments": [
+    {
+     "id": "P-1020",
+     "date": "2026-11-19",
+     "invoice": "48220",
+     "customer": "Curtis Vane",
+     "method": "Amex",
+     "amount": 98000,
+     "batch": "",
+     "plan": ""
+    }
+   ]
+  }
+ ],
+ "needs_person": [
+  {
+   "bank": {
+    "row": 6,
+    "date": "2026-11-18",
+    "description": "BANKCARD MTOT DEP",
+    "amount": 69230,
+    "reference": "BC1117"
+   },
+   "source": "Cards",
+   "reason": "No batch adds up to exactly this amount.",
+   "hint": "Closest batch: 2026-11-17, 3 payment(s) adding up to $881.30. The bank shows $189.00 less."
+  },
+  {
+   "bank": {
+    "row": 12,
+    "date": "2026-11-20",
+    "description": "FINCO FUNDING INV 48216",
+    "amount": 1209600,
+    "reference": "FF2231"
+   },
+   "source": "Financing",
+   "reason": "The fee differs. Plan '60 months 9.99%' should deduct $378.00 (3.00%) from $12,600.00; the bank shows $504.00 deducted.",
+   "hint": "Payment P-1016 Nell Hargrove, invoice 48216. Expected deposit $12,222.00."
+  },
+  {
+   "bank": {
+    "row": 15,
+    "date": "2026-11-20",
+    "description": "BANKCARD MTOT DEP",
+    "amount": 45500,
+    "reference": "BC1119"
+   },
+   "source": null,
+   "reason": "This bank line repeats an earlier one: same date, amount, description and reference.",
+   "hint": "Check with the bank before counting it twice."
+  },
+  {
+   "bank": {
+    "row": 16,
+    "date": "2026-11-20",
+    "description": "WIRE IN TX COMPTROLLER REFUND",
+    "amount": 31840,
+    "reference": "WR0090"
+   },
+   "source": null,
+   "reason": "No rule covers this kind of bank line.",
+   "hint": "If it is a customer payment, add its wording to a source in the config."
+  }
+ ],
+ "open_payments": [
+  {
+   "payment": {
+    "id": "P-1007",
+    "date": "2026-11-17",
+    "invoice": "48207",
+    "customer": "Priya Nandakumar",
+    "method": "Visa",
+    "amount": 18900,
+    "batch": "",
+    "plan": ""
+   },
+   "days": 3,
+   "note": ""
+  },
+  {
+   "payment": {
+    "id": "P-1008",
+    "date": "2026-11-17",
+    "invoice": "48208",
+    "customer": "Owen Stricklin",
+    "method": "Visa",
+    "amount": 74230,
+    "batch": "",
+    "plan": ""
+   },
+   "days": 3,
+   "note": ""
+  },
+  {
+   "payment": {
+    "id": "P-1011",
+    "date": "2026-11-17",
+    "invoice": "48201",
+    "customer": "Dana Whitfield",
+    "method": "Visa",
+    "amount": -5000,
+    "batch": "",
+    "plan": ""
+   },
+   "days": 3,
+   "note": ""
+  },
+  {
+   "payment": {
+    "id": "P-1016",
+    "date": "2026-11-18",
+    "invoice": "48216",
+    "customer": "Nell Hargrove",
+    "method": "Financing",
+    "amount": 1260000,
+    "batch": "",
+    "plan": "60 months 9.99%"
+   },
+   "days": 2,
+   "note": ""
+  },
+  {
+   "payment": {
+    "id": "P-1019",
+    "date": "2026-11-19",
+    "invoice": "48219",
+    "customer": "Rosa Delgado",
+    "method": "Financing",
+    "amount": 620000,
+    "batch": "",
+    "plan": "18 months no interest"
+   },
+   "days": 1,
+   "note": ""
+  },
+  {
+   "payment": {
+    "id": "P-1021",
+    "date": "2026-11-20",
+    "invoice": "48221",
+    "customer": "Mina Sato",
+    "method": "Visa",
+    "amount": 27500,
+    "batch": "",
+    "plan": ""
+   },
+   "days": 0,
+   "note": ""
+  },
+  {
+   "payment": {
+    "id": "P-1022",
+    "date": "2026-11-20",
+    "invoice": "48222",
+    "customer": "Paul Everhart",
+    "method": "Check",
+    "amount": 64000,
+    "batch": "",
+    "plan": ""
+   },
+   "days": 0,
+   "note": ""
+  }
+ ],
+ "skipped_bank_lines": [
+  {
+   "row": 2,
+   "date": "2026-11-16",
+   "description": "CHECK 5512 AMARILLO SUPPLY",
+   "amount": -184217,
+   "reference": "5512"
+  },
+  {
+   "row": 17,
+   "date": "2026-11-20",
+   "description": "MONTHLY SERVICE FEE",
+   "amount": -3500,
+   "reference": ""
+  }
+ ]
+}
