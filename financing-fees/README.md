@@ -2,7 +2,7 @@
 
 A Claude skill that checks a financing company's funding statement, loan by loan, and totals the dealer fees. It reads the statement, the plan rates and, if you have it, the payments export. It writes a report. It never posts or changes anything.
 
-Written by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's monthly financing check. It runs on made-up sample data. The plan rates in `config.example.json` are placeholders, and the column names are placeholders until they are set from real exports. "Finco" is a made-up financing company.
+Built with Claude Code by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's monthly financing check. It runs on made-up sample data. The plan rates in `config.example.json` are placeholders, and the column names are placeholders until they are set from real exports. "Finco" is a made-up financing company.
 
 When a customer finances a job, the financing company pays the contractor the financed amount minus a dealer fee that depends on the plan. This skill checks each fee against the plan's rate, checks the statement's own arithmetic, and compares the statement with the company's financed payments. Then it totals the fees by plan and by month so bookkeeping knows the expense figure.
 

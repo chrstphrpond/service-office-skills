@@ -2,7 +2,7 @@
 
 Four Claude skills for the office of an HVAC and plumbing company. Each one takes a daily or monthly check that someone does by hand, runs it the same way every time, and lists only what a person has to look at.
 
-Written by Christopher Pond Maquidato in November 2026. They run on made-up sample data. The column names, bank wording and fee rates are placeholders until they are set from real exports.
+Built with Claude Code by Christopher Pond Maquidato in November 2026. They run on made-up sample data. The column names, bank wording and fee rates are placeholders until they are set from real exports.
 
 | Skill | The question it answers | Reads |
 |---|---|---|

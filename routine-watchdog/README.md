@@ -2,7 +2,7 @@
 
 A Claude skill that answers "did every routine run today, and if not, why?" from a run log. It reads the log and a schedule, and writes a report. It never restarts a routine, signs in anywhere or edits the log.
 
-Written by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily routines. It runs on made-up sample data: the routine names, owners, computer names and failure wording in `routines.example.json` are placeholders until they are set from the real routines.
+Built with Claude Code by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily routines. It runs on made-up sample data: the routine names, owners, computer names and failure wording in `routines.example.json` are placeholders until they are set from the real routines.
 
 The problem it addresses: routines depend on websites that sign them out and on office computers that aren't always on. When one stalls, nobody notices until the work is missing.
 

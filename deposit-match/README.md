@@ -2,7 +2,7 @@
 
 A Claude skill that matches bank deposits to recorded payments, to the cent, and lists what a person has to look at. It reads two CSV exports and writes a report. It never posts or changes anything.
 
-Written by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily deposit check. It runs on made-up sample data: the column names and bank wording in `config.example.json` are placeholders until they are set from real exports.
+Built with Claude Code by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily deposit check. It runs on made-up sample data: the column names and bank wording in `config.example.json` are placeholders until they are set from real exports.
 
 ![The report for the sample week: 10 of 14 deposits matched, 4 listed for a person with the reason and the numbers](docs/report.png)
 

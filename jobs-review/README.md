@@ -2,7 +2,7 @@
 
 A Claude skill that reviews a day's completed jobs and lists what a person has to look at, grouped by check and by technician. It reads one CSV export and writes a report. It never edits a job, invoice or anything else.
 
-Written by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily jobs check. It runs on made-up sample data: the column names and rules in `config.example.json` are placeholders until they are set from real exports.
+Built with Claude Code by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily jobs check. It runs on made-up sample data: the column names and rules in `config.example.json` are placeholders until they are set from real exports.
 
 ![The jobs review for the sample day: 24 jobs reviewed, 10 flagged, counted by check, then listed with the reason](docs/report.png)
 
