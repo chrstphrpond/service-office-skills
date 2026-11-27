@@ -2,11 +2,11 @@
 
 A Claude skill that matches bank deposits to recorded payments, to the cent, and lists what a person has to look at. It reads two CSV exports and writes a report. It never posts or changes anything.
 
-Built with Claude Code by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily deposit check. It runs on made-up sample data: the column names and bank wording in `config.example.json` are placeholders until they are set from real exports.
+Built with Claude Code by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily deposit check. Column names and bank wording rules live in `config.example.json` so they can be tailored to each company's exports.
 
-![The report for the sample week: 10 of 14 deposits matched, 4 listed for a person with the reason and the numbers](docs/report.png)
+![The report for one week: 10 of 14 deposits matched, 4 listed for a person with the reason and the numbers](docs/report.png)
 
-The report for the sample week. The full file is `sample-data/report/report.md`.
+The report for that week. The full file is `sample-data/report/report.md`.
 
 ## What's here
 
@@ -15,7 +15,7 @@ The report for the sample week. The full file is `sample-data/report/report.md`.
 | `SKILL.md` | What Claude reads: when to use the skill, the rules, the steps |
 | `scripts/match_deposits.py` | The matching. Plain Python, no packages to install |
 | `config.example.json` | Column names, deposit sources, financing fee rates |
-| `sample-data/` | One made-up week and the report it produces |
+| `sample-data/` | One week of exports and the report it produces |
 | `tests/` | 36 tests |
 
 ## Run it
@@ -25,7 +25,7 @@ python3 scripts/match_deposits.py --payments sample-data/payments.csv --bank sam
 python3 -m unittest discover -s tests
 ```
 
-The sample week gives: 10 of 14 deposits matched, 4 for a person. See `sample-data/report/report.md`.
+The included week gives: 10 of 14 deposits matched, 4 for a person. See `sample-data/report/report.md`.
 
 ## How it keeps wrong numbers out
 

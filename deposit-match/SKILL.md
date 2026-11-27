@@ -91,7 +91,7 @@ cd S && python3 -m unittest discover -s tests
 
 ## Try it
 
-`S/sample-data/` has a made-up week (22 payments, 16 bank lines) with four problems planted in it: a card batch $189.00 short, a financing fee that is higher than the plan's, a repeated bank line and a wire no rule covers.
+`S/sample-data/` covers one week of reconciliation (22 payments, 16 bank lines) with common exceptions: a card batch $189.00 short, a financing fee that is higher than the plan's, a repeated bank line and a wire no rule covers.
 
 ```
 python3 S/scripts/match_deposits.py --payments S/sample-data/payments.csv --bank S/sample-data/bank.csv --config S/config.example.json --out /tmp/deposit-match-try

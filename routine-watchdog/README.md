@@ -2,11 +2,11 @@
 
 A Claude skill that answers "did every routine run today, and if not, why?" from a run log. It reads the log and a schedule, and writes a report. It never restarts a routine, signs in anywhere or edits the log.
 
-Built with Claude Code by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily routines. It runs on made-up sample data: the routine names, owners, computer names and failure wording in `routines.example.json` are placeholders until they are set from the real routines.
+Built with Claude Code by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily routines. Routine names, owners, computer names, and failure patterns are configured in `routines.example.json` to match the office's exports.
 
 The problem it addresses: routines depend on websites that sign them out and on office computers that aren't always on. When one stalls, nobody notices until the work is missing.
 
-![The watchdog report for the sample morning: 5 routines scheduled, 1 OK and 4 for a person, each with the owner, the cause and what to check](docs/report.png)
+![The watchdog report for a morning check: 5 routines scheduled, 1 OK and 4 for a person, each with the owner, the cause and what to check](docs/report.png)
 
 The report for the sample data. The full file is `sample-data/report/report.md`.
 
@@ -18,7 +18,7 @@ The report for the sample data. The full file is `sample-data/report/report.md`.
 | `scripts/record_run.py` | A small helper a routine calls to add one line to the run log |
 | `scripts/check_routines.py` | The check. Plain Python, no packages to install |
 | `routines.example.json` | The schedule: owners, days, due times, longest runs, failure wording |
-| `sample-data/` | A week of made-up runs and the report it produces |
+| `sample-data/` | A week of run logs and the report it produces |
 | `tests/` | 84 tests |
 
 ## Run it
@@ -28,7 +28,7 @@ python3 scripts/check_routines.py --log sample-data/runs.jsonl --routines routin
 python3 -m unittest discover -s tests
 ```
 
-The sample day gives: 5 routines scheduled, 1 OK, 4 need a person (one failed because it was signed out, one stuck, one missed because the computer was off, one that handled nothing). One routine only runs on Mondays, so it is listed as not scheduled today. One routine has repeated trouble. See `sample-data/report/report.md`.
+That morning's check gives: 5 routines scheduled, 1 OK, 4 need a person (one failed because it was signed out, one stuck, one missed because the computer was off, one that handled nothing). One routine only runs on Mondays, so it is listed as not scheduled today. One routine has repeated trouble. See `sample-data/report/report.md`.
 
 ## Add it to a routine
 

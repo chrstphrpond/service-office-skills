@@ -86,7 +86,7 @@ cd S && python3 -m unittest discover -s tests
 
 ## Try it
 
-`S/sample-data/jobs.csv` has a made-up day (Nov 20, 2026: 26 rows, 5 technicians, 2 jobs not completed) with problems planted in it: a missing invoice, a zero-dollar service call, a balance due on a check, thin notes, two callbacks, a service call under the dispatch fee, a 20% discount and an invoice number used twice.
+`S/sample-data/jobs.csv` covers a full day of dispatch records (Nov 20, 2026: 26 rows, 5 technicians, 2 jobs not completed) with common audit exceptions: a missing invoice, a zero-dollar service call, a balance due on a check, thin notes, two callbacks, a service call under the dispatch fee, a 20% discount and an invoice number used twice.
 
 ```
 python3 S/scripts/review_jobs.py --jobs S/sample-data/jobs.csv --config S/config.example.json --out /tmp/jobs-review-try

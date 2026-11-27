@@ -2,7 +2,7 @@
 
 Four Claude skills for the office of an HVAC and plumbing company. Each one takes a daily or monthly check that someone does by hand, runs it the same way every time, and lists only what a person has to look at.
 
-Built with Claude Code by Christopher Pond Maquidato in November 2026. They run on made-up sample data. The column names, bank wording and fee rates are placeholders until they are set from real exports.
+Built with Claude Code by Christopher Pond Maquidato in November 2026. The included datasets illustrate an HVAC and plumbing office workflow, and column names, bank wording, and fee rates are configurable per company export.
 
 | Skill | The question it answers | Reads |
 |---|---|---|
@@ -11,7 +11,7 @@ Built with Claude Code by Christopher Pond Maquidato in November 2026. They run 
 | [`financing-fees`](financing-fees/) | Did the financing company deduct the right fee on each loan? | Funding statement, payments export |
 | [`routine-watchdog`](routine-watchdog/) | Did every routine run today, and if not, why? | Run log, schedule |
 
-![The deposit match report for the sample week: 10 of 14 deposits matched, 4 listed for a person with the reason and the numbers](deposit-match/docs/report.png)
+![The deposit match report for one week: 10 of 14 deposits matched, 4 listed for a person with the reason and the numbers](deposit-match/docs/report.png)
 
 One of the four reports. Each skill's folder shows its own.
 
@@ -26,7 +26,7 @@ The four share the same rules.
 - **The totals are proven.** Each script checks that its numbers add up before it writes a report, and refuses to write one if they don't.
 - **Three exit codes.** 0 is clean, 1 means something needs a person, 2 means the input couldn't be read. A scheduler can alert on 1 and 2.
 
-Each folder has a `SKILL.md` that Claude reads, the script, a config file, a sample week with the report it produces, and tests.
+Each folder has a `SKILL.md` that Claude reads, the script, a config file, an example week with the report it produces, and tests.
 
 ## Try one
 

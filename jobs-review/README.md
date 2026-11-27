@@ -2,9 +2,9 @@
 
 A Claude skill that reviews a day's completed jobs and lists what a person has to look at, grouped by check and by technician. It reads one CSV export and writes a report. It never edits a job, invoice or anything else.
 
-Built with Claude Code by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily jobs check. It runs on made-up sample data: the column names and rules in `config.example.json` are placeholders until they are set from real exports.
+Built with Claude Code by Christopher Pond Maquidato in November 2026 for an HVAC and plumbing company's daily jobs check. Column names and audit rules are configured in `config.example.json` to match the company's exports.
 
-![The jobs review for the sample day: 24 jobs reviewed, 10 flagged, counted by check, then listed with the reason](docs/report.png)
+![The jobs review for one day: 24 jobs reviewed, 10 flagged, counted by check, then listed with the reason](docs/report.png)
 
 The report for the sample data. The full file is `sample-data/report/report.md`.
 
@@ -15,7 +15,7 @@ The report for the sample data. The full file is `sample-data/report/report.md`.
 | `SKILL.md` | What Claude reads: when to use the skill, the rules, the steps |
 | `scripts/review_jobs.py` | The checks. Plain Python, no packages to install |
 | `config.example.json` | Column names, status and payment type lists, minimums, discount limit |
-| `sample-data/` | One made-up day of jobs and the report it produces |
+| `sample-data/` | One day of job exports and the report it produces |
 | `tests/` | 49 tests |
 
 ## Run it
@@ -25,7 +25,7 @@ python3 scripts/review_jobs.py --jobs sample-data/jobs.csv --config config.examp
 python3 -m unittest discover -s tests
 ```
 
-The sample day gives: 24 jobs reviewed, 2 skipped, 10 flags on 10 jobs. See `sample-data/report/report.md`.
+The included day gives: 24 jobs reviewed, 2 skipped, 10 flags on 10 jobs. See `sample-data/report/report.md`.
 
 ## The checks
 
@@ -57,7 +57,7 @@ Copy this folder to `~/.claude/skills/jobs-review/`.
 ## Not done yet
 
 - Reading ServiceTitan or QuickBooks Online directly. It works from one CSV export.
-- Real column names, job types, payment types and minimums. All are placeholders until set from the company's own exports.
+- Company-specific column names, job types, payment types, and minimums configured in `config.example.json` to match your own exports.
 - The discount check assumes the invoice total is after the discount, so the total before is total plus discount. A system that exports it differently needs a different formula.
 - Credits and negative invoice totals. They stop the run today.
 - Jobs split across several invoices, or several jobs on one invoice on purpose. Both show as flags or problems today.

@@ -83,7 +83,7 @@ cd S && python3 -m unittest discover -s tests
 
 ## Try it
 
-`S/sample-data/` has a made-up week of runs for six routines, with problems planted in it: a routine signed out of a website, a computer that was off, a run that never finished, a run that handled nothing, and a routine with repeated trouble.
+`S/sample-data/` includes a week of runs for six routines, covering common failure modes: a routine signed out of a website, a computer that was off, a run that never finished, a run that handled nothing, and a routine with repeated trouble.
 
 ```
 python3 S/scripts/check_routines.py --log S/sample-data/runs.jsonl --routines S/routines.example.json --out /tmp/routine-watchdog-try --now 2026-11-20T09:00:00-06:00

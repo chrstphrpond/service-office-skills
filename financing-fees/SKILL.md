@@ -81,7 +81,7 @@ cd S && python3 -m unittest discover -s tests
 
 ## Try it
 
-`S/sample-data/` has 18 made-up funding lines across October and November 2026 and the matching payments, with problems planted in them: a fee over the plan rate, a net that is a cent off, a plan with no rate, one loan funded twice, a funded loan with no payment, a financed amount that differs from the payment, a plan that differs from the payment, and a financed payment not funded after 17 days.
+`S/sample-data/` includes 18 funding lines across October and November 2026 and the matching payments, covering edge cases: a fee over the plan rate, a net that is a cent off, a plan with no rate, one loan funded twice, a funded loan with no payment, a financed amount that differs from the payment, a plan that differs from the payment, and a financed payment not funded after 17 days.
 
 ```
 python3 S/scripts/check_financing_fees.py --statement S/sample-data/funding-statement.csv --payments S/sample-data/payments.csv --config S/config.example.json --out /tmp/financing-fees-try
